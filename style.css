@@ -1,11 +1,75 @@
 html, body {
-  margin: 0;
-  padding: 0;
+  height: 100%;
 }
-canvas {
+body {
+  background-color: lightblue;
   margin: auto;
   top: 0;
   left: 0;
   position: absolute;
   z-index: -1;
+}
+
+tiger {
+  position: relative;
+}
+
+tiger img {
+  width: 150px;
+   height: 150px;
+   position: absolute;
+   top: 50px;
+   left: 50px;
+}
+
+.fade-out {
+  animation: fadeOut 1s forwards;
+  -webkit-animation: fadeOut ease 8s;
+  -moz-animation: fadeOut ease 8s;
+  -o-animation: fadeOut ease 8s;
+  -ms-animation: fadeOut ease 8s;
+}
+@keyframes fadeOut {
+  100% {
+    opacity:1;
+  }
+  0% {
+    opacity:0;
+  }
+}
+
+@-moz-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-o-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-ms-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+}
 }
