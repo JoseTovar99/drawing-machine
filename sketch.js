@@ -12,7 +12,7 @@ function setup() {
 
 function draw() {
 
-  background(68, 182, 184, 5);
+  background(68, 182, 184, 4);
 
   if (mouseIsPressed) {
     strokeWeight(strokeWidth);
